@@ -214,9 +214,10 @@ Using the annoyingSong function below do the following:
 2. At each invocation, it should RETURN this string (note: the tests are expecting the same string as below):
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
-function annoyingSong(number){
-  for (let i = number; i >= 0; i--){
-    console.log(`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`);
+function annoyingSong(num){
+  let newNum = parseInt(num)
+  for (let i = newNum -1; i >= 0; i--){
+    console.log(`${newNum} bottles of soda on the wall, ${newNum} bottles of soda, take one down pass it around ${newNum - 1} bottles of soda on the wall`);
   }
 }
 console.log(annoyingSong(5));
@@ -290,7 +291,7 @@ module.exports = {
   multiply,
   dogYears,
   hungryDog,
-  // game,
+  game,
   miles,
   feet,
   annoyingSong,
