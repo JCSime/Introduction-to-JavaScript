@@ -217,7 +217,7 @@ Using the annoyingSong function below do the following:
 function annoyingSong(num){
   let newNum = parseInt(num)
   for (let i = newNum -1; i >= 0; i--){
-    console.log(`${newNum} bottles of soda on the wall, ${newNum} bottles of soda, take one down pass it around ${newNum - 1} bottles of soda on the wall`);
+    return`${newNum} bottles of soda on the wall, ${newNum} bottles of soda, take one down pass it around ${newNum - 1} bottles of soda on the wall`;
   }
 }
 console.log(annoyingSong(5));
